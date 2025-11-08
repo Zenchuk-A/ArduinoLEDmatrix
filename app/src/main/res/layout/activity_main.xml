@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnColor"
+        android:layout_width="86dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnDropColor"
+        android:layout_width="110dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="Drop color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnColor" />
+
+    <Button
+        android:id="@+id/btnGetColor"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="Get color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnDropColor" />
+
+    <ImageView
+        android:id="@+id/curClrV"
+        android:layout_width="394dp"
+        android:layout_height="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnDropColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <Switch
+        android:id="@+id/swchSend"
+        android:layout_width="122dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="set one LED"
+        android:checked="true"
+        app:layout_constraintBottom_toTopOf="@+id/btnColor"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/setMatrix"
+        android:layout_width="161dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="8dp"
+        android:text="set LED matrix"
+        app:layout_constraintBottom_toTopOf="@+id/btnGetColor"
+        app:layout_constraintStart_toEndOf="@+id/swchSend" />
+
+    <TextView
+        android:id="@+id/tvDbg"
+        android:layout_width="305dp"
+        android:layout_height="22dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scrollHorizontally="true"
+        android:text="Debug"
+        app:layout_constraintBottom_toTopOf="@+id/setMatrix"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnA"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="4dp"
+        android:text="A"
+        app:layout_constraintBottom_toTopOf="@+id/tvDbg"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnB"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="4dp"
+        android:text="B"
+        app:layout_constraintBottom_toTopOf="@+id/tvDbg"
+        app:layout_constraintEnd_toStartOf="@+id/btnC"
+        app:layout_constraintStart_toEndOf="@+id/btnA" />
+
+    <Button
+        android:id="@+id/btnC"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="4dp"
+        android:text="C"
+        app:layout_constraintBottom_toTopOf="@+id/tvDbg"
+        app:layout_constraintStart_toEndOf="@+id/btnB"
+        tools:layout_editor_absoluteY="560dp" />
+
+    <Button
+        android:id="@+id/btnD"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="4dp"
+        android:text="D"
+        app:layout_constraintBottom_toTopOf="@+id/tvDbg"
+        app:layout_constraintStart_toEndOf="@+id/btnC"
+        tools:layout_editor_absoluteY="560dp" />
+
+    <Button
+        android:id="@+id/btnE"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="4dp"
+        android:text="E"
+        app:layout_constraintBottom_toTopOf="@+id/tvDbg"
+        app:layout_constraintStart_toEndOf="@+id/btnD"
+        tools:layout_editor_absoluteY="560dp" />
+
+    <Button
+        android:id="@+id/btnF"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="4dp"
+        android:text="F"
+        app:layout_constraintBottom_toTopOf="@+id/tvDbg"
+        app:layout_constraintStart_toEndOf="@+id/btnE"
+        tools:layout_editor_absoluteY="560dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
